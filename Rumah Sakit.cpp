@@ -9,7 +9,7 @@ int main(){
 	
 	//input
 	string np, ap, jk, pelayanan, bonus;
-	int li, harga, uk, up, total, zakat, pajak;
+	int li, harga, uk, up, total, zakat, pajak, totaldua;
 	
 	cout<<"Masukkan Nama Pasien :";
 	getline(cin, np);
@@ -22,10 +22,9 @@ int main(){
 	cout<<"Masukkan Harga per malam Rp. :";
 	cin>>harga;
 	cout<<"==========================================="<< endl << endl;
+	
 	//proses
 	total = li * harga;
-	uk = total - up;
-	
 	//Output
 	
 	cout<<"Masukkan nama pasien: "<< np <<endl;
@@ -83,11 +82,13 @@ int main(){
 	cout<<"----------------------------------------------------"<< endl;
 	cout<<pelayanan <<endl;
 	cout<<bonus <<endl;
-	
+	//output harga ceritanya
 	cout<<"------------------------------------------" <<endl << endl;
-	cout<<"Total Pembayaran Rumah Sakit"<< total<< endl;
+	totaldua = total + pajak + zakat;
+	cout<<"Total Pembayaran Rumah Sakit"<< totaldua<< endl;
 	cout<<"Masukkan Uang pembayaran";
 	cin>>up;
+	uk = up - totaldua;
 	cout<<"uang kembalian adalah" << uk;
 	
 	
