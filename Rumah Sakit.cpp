@@ -85,11 +85,11 @@ int main(){
 	//output harga ceritanya
 	cout<<"------------------------------------------" <<endl << endl;
 	totaldua = total + pajak + zakat;
-	cout<<"Total Pembayaran Rumah Sakit"<< totaldua<< endl;
-	cout<<"Masukkan Uang pembayaran";
+	cout<<"Total Pembayaran Rumah Sakit : "<< totaldua<< endl;
+	cout<<"Masukkan Uang pembayaran : ";
 	cin>>up;
 	uk = up - totaldua;
-	cout<<"uang kembalian adalah" << uk;
+	cout<<"uang kembalian adalah " << uk;
 	
 	
 }
